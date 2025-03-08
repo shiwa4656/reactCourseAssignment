@@ -42,9 +42,6 @@ const CartPage = () => {
               <span>${total.toFixed(2)}</span>
             </div>
             
-            <Link to="/checkout" className="checkout-button">
-              Proceed to Checkout
-            </Link>
             
             <Link to="/" className="continue-shopping-link">
               Continue Shopping
