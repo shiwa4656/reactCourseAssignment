@@ -1,41 +1,50 @@
+// src/pages/CheckoutSuccessPage/CheckoutSuccessPage.jsx
 import { useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useCart } from '../../context/CartContext';
 import './CheckoutSuccessPage.css';
 
 const CheckoutSuccessPage = () => {
-  const navigate = useNavigate();
+  const { clearCart } = useCart();
   
-  // Redirect to home if user tries to access this page directly
+  // Clear the cart when the success page loads
   useEffect(() => {
-    const isFromCheckout = sessionStorage.getItem('checkoutCompleted');
-    if (!isFromCheckout) {
-      navigate('/');
-    } else {
-      // Clean up the session storage
-      sessionStorage.removeItem('checkoutCompleted');
-    }
-  }, [navigate]);
-
+    clearCart();
+  }, [clearCart]);
+  
   return (
-    <div className="checkout-success-page">
+    <div className="checkout-success">
       <div className="success-container">
-        <div className="success-icon">✓</div>
-        <h1>Order Confirmed!</h1>
-        <p>Thank you for your purchase. Your order has been received and is being processed.</p>
-        
-        <div className="order-details">
-          <p>Order confirmation has been sent to your email.</p>
-          <p>Order reference: #{Math.floor(100000 + Math.random() * 900000)}</p>
+        <div className="success-icon">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="64" 
+            height="64" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+          >
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
         </div>
         
-        <div className="action-buttons">
-          <Link to="/" className="home-button">
-            Continue Shopping
-          </Link>
-          <Link to="/contact" className="contact-button">
-            Contact Support
-          </Link>
-        </div>
+        <h1>Order Successful!</h1>
+        
+        <p className="success-message">
+          Thank you for your purchase! Your order has been successfully placed.
+        </p>
+        
+        <p className="order-note">
+          You will receive an email confirmation shortly.
+        </p>
+        
+        <Link to="/" className="back-to-store">
+          Back to Store
+        </Link>
       </div>
     </div>
   );

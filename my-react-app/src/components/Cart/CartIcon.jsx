@@ -1,10 +1,10 @@
 // src/components/Cart/CartIcon.jsx
 import { Link } from 'react-router-dom';
+import { useCart } from '../../context/CartContext';
 import './Cart.css';
 
 const CartIcon = () => {
-  // This will be replaced with actual cart state later
-  const itemCount = 0;
+  const { itemCount } = useCart();
   
   return (
     <div className="cart-icon">
