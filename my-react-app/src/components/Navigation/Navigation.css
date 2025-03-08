@@ -1,0 +1,36 @@
+/* src/components/Navigation/Navigation.css */
+.navigation {
+    margin-left: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #4a00e0;
+  }
+  
+  .nav-links a.active {
+    color: #4a00e0;
+    border-bottom: 2px solid #4a00e0;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      width: 100%;
+      justify-content: center;
+    }
+  }

@@ -1,0 +1,66 @@
+/* src/pages/HomePage/HomePage.css */
+.home-page {
+  padding: 1rem 0;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.home-header h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-message {
+  background-color: #fff3f3;
+  color: #d32f2f;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.no-products {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+  font-size: 1.1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .home-header h1 {
+    font-size: 1.5rem;
+  }
+}
