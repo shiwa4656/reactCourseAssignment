@@ -32,7 +32,7 @@ The project follows a well-organized folder structure:
 1. Clone the repository
    ```
    git clone https://github.com/shiwa4656/reactCourseAssignment
-   cd ecom-store
+
    ```
 
 2. Install dependencies
@@ -48,6 +48,11 @@ The project follows a well-organized folder structure:
    ```
 
 4. Open your browser to `http://localhost:3000`
+
+5. ### Live on Netlify
+   https://online-shop46.netlify.app/
+   
+
 
 5. ### Live on Netlify
    https://online-shop46.netlify.app/
