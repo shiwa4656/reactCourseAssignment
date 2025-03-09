@@ -1,4 +1,3 @@
-// src/pages/CartPage/CartPage.jsx
 import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 import CartItem from '../../components/Cart/CartItem';

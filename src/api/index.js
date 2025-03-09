@@ -1,11 +1,7 @@
-// src/api/index.js
+
 
 const BASE_URL = 'https://v2.api.noroff.dev';
 
-/**
- * Fetches all products from the online shop API
- * @returns {Promise} Promise that resolves to the product data
- */
 export const getAllProducts = async () => {
   try {
     const response = await fetch(`${BASE_URL}/online-shop`);

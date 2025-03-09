@@ -49,4 +49,8 @@ The project follows a well-organized folder structure:
 
 4. Open your browser to `http://localhost:3000`
 
+5. ### Live on Netlify
+   https://online-shop46.netlify.app/
+   
+
 

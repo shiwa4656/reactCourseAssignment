@@ -1,4 +1,4 @@
-// src/context/CartContext.jsx
+
 import { createContext, useContext, useReducer, useEffect } from 'react';
 
 // Create the cart context

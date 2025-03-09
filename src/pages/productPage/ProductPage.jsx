@@ -1,4 +1,3 @@
-// src/pages/ProductPage/ProductPage.jsx
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getProductById } from '../../api';

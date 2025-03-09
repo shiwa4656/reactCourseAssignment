@@ -1,4 +1,3 @@
-// src/components/SearchBar/SearchBar.jsx
 import { useState, useEffect } from 'react';
 import './SearchBar.css';
 

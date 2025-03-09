@@ -1,4 +1,3 @@
-// src/components/Cart/CartIcon.jsx
 import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 import './Cart.css';

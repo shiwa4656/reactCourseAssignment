@@ -1,4 +1,3 @@
-// src/components/Product/ProductCard.jsx
 import { Link } from 'react-router-dom';
 import './Product.css';
 import calculateDiscount from '../../utils/calculateDiscount';

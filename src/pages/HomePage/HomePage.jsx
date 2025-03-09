@@ -1,7 +1,6 @@
-// src/pages/HomePage/HomePage.jsx
 import { useState, useEffect } from 'react';
 import { getAllProducts } from '../../api';
-import SearchBar from '../../components/SearchBar/SearchBar';
+import SearchBar from '../../components/searchBar/SearchBar';
 import ProductCard from '../../components/Product/ProductCard';
 import './HomePage.css';
 

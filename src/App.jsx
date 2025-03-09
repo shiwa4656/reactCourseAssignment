@@ -1,11 +1,10 @@
-// src/App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
-import Layout from './components/Layout/layout';
+import Layout from './components/Layout/Layout';
 import HomePage from './pages/HomePage/HomePage';
 import ProductPage from './pages/productPage/ProductPage';
 import ContactPage from './pages/contactPage/ContactPage';
-import CartPage from './pages/cartPage/CartPage';
+import CartPage from './pages/CartPage/CartPage';
 import CheckoutSuccessPage from "./pages/checkoutSuccessPage/CheckoutSuccess";
 import './App.css';
 
