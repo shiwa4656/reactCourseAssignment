@@ -32,7 +32,7 @@ The project follows a well-organized folder structure:
 1. Clone the repository
    ```
    git clone https://github.com/shiwa4656/reactCourseAssignment
-   cd ecom-store
+
    ```
 
 2. Install dependencies
