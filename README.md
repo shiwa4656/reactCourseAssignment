@@ -54,8 +54,3 @@ The project follows a well-organized folder structure:
    
 
 
-5. ### Live on Netlify
-   https://online-shop46.netlify.app/
-   
-
-
